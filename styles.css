@@ -1,0 +1,108 @@
+/* Reset default styles and apply global styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    background: #c9866a;
+}
+
+/* Styling for the header */
+header {
+    background-color: #904627;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Ajusta para uma disposição em coluna */
+    align-items: center;
+}
+
+header h1 {
+    margin: 10px 0 20px; /* Adiciona margem abaixo do título */
+    font-size: 36px;
+}
+
+/* Estilo para a barra de navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adiciona espaçamento abaixo da barra de navegação */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li button {
+    background-color: #904627;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav ul li button:hover {
+    background-color: #6d3320;
+}
+
+/* Novo estilo para a barra de pesquisa */
+header form#formPesquisa {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo da barra de pesquisa */
+}
+
+header form#formPesquisa input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+header form#formPesquisa button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #6d3320;
+    color: #ffffff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+header form#formPesquisa button:hover {
+    background-color: #904627;
+}
+
+/* Styling for main content */
+main {
+    padding: 20px;
+    text-align: justify;
+}
+
+/* Styling for section headings */
+section h2 {
+    font-size: 24px;
+    color: #904627;
+}
+
+/* Styling for images */
+img {
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Styling for footer */
+footer {
+    background: #904627;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
