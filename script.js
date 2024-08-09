@@ -1,19 +1,31 @@
-// Função genérica para adicionar eventos de clique para redirecionamento
-function addRedirectListener(buttonId, url) {
-    const button = document.getElementById(buttonId);
-    if (button) {
-        button.addEventListener('click', function() {
-            window.location.href = url;
-        });
-    } else {
-        console.warn(`Botão com ID ${buttonId} não encontrado.`);
-    }
-}
 
-// Adicionar eventos de clique para cada botão
-addRedirectListener('btnInicio', 'index.html');
-addRedirectListener('btnHistoria', 'historia.html');
-addRedirectListener('btnImportancia', 'importancia.html');
-addRedirectListener('btnTecnologia', 'tecnologia.html');
-addRedirectListener('btnCuriosidades', 'curiosidades.html');
-addRedirectListener('btnReceita', 'receita.html');
+const btnInicio = document.getElementById('btnInicio');
+const btnHistoria = document.getElementById('btnHistoria');
+const btnImportancia = document.getElementById('btnImportancia');
+const btnTecnologia = document.getElementById('btnTecnologia');
+const btnCuriosidades = document.getElementById('btnCuriosidades');
+const btnReceita = document.getElementById('btnReceita');
+
+btnInicio.addEventListener('click', function() {
+    window.location.href = 'index.html'; 
+});
+
+btnHistoria.addEventListener('click', function() {
+    window.location.href = 'historia.html'; 
+});
+
+btnImportancia.addEventListener('click', function() {
+    window.location.href = 'importancia.html'; 
+});
+
+btnTecnologia.addEventListener('click', function() {
+    window.location.href = 'tecnologia.html'; 
+});
+
+btnCuriosidades.addEventListener('click', function() {
+    window.location.href = 'curiosidades.html';
+});
+
+btnReceita.addEventListener('click', function() {
+    window.location.href = 'receita.html'; 
+});
